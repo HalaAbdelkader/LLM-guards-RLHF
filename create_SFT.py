@@ -109,14 +109,14 @@ model = AutoModelForCausalLM.from_pretrained(
     quantization_config=bnb_config, 
     use_cache=False, 
     device_map="auto",
-    token = "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", # if model is gated like llama or mistral
+    token = "add_your_token", # if model is gated like llama or mistral
     attn_implementation="flash_attention_2" if use_flash_attention2 else "sdpa"
 )
 model.config.pretraining_tp = 1
 
 tokenizer = AutoTokenizer.from_pretrained(
     model_id,
-    token = "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", # if model is gated like llama or mistral
+    token = "add_your_token", # if model is gated like llama or mistral
 )
 tokenizer.pad_token = tokenizer.eos_token
 tokenizer.padding_side = "right"
