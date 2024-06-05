@@ -1,13 +1,7 @@
 from tqdm import tqdm
 import numpy as np
-
-
 tqdm.pandas()
-
 from datasets import load_dataset
-
-
-
 from transformers import AutoModelForSequenceClassification, AutoTokenizer
 from transformers import TrainingArguments, Trainer, DataCollatorWithPadding
 from datasets import load_metric
