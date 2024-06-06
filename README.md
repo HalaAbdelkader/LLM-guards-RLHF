@@ -36,7 +36,7 @@ Moderation pipeline:
 | NeMo Guardrails |  78%         | 97% |
 
 Unified pipeline:
-|   Method         |    % of relevant prompts allowed  | % of off-topic prompts blocked | % of harmful prompts blocked |
+|   Method         |    % of relevant prompts allowed  | % of off-topic prompts blocked | 
 | ------------------ |---------------- | ---------------- |
 | Llama-3 |   98%      | 93.43%  | 94.71% |
 | mistral |  97.57%  | 98.86% | 85.86% |
